@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Obstetricia UChile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Malla Obstetricia y Puericultura - UChile</h1>
+  <div id="malla" class="grid">
+    <div class="semestre">
+      <h2>3° Semestre</h2>
+      <div class="ramo" data-id="obstetricia1" onclick="toggleRamo(this)" data-prerrequisitos="">Obstetricia Fisiológica I</div>
+      <div class="ramo" data-id="neonatologia1" onclick="toggleRamo(this)" data-prerrequisitos="obstetricia1">Neonatología I</div>
+    </div>
+
+    <div class="semestre">
+      <h2>4° Semestre</h2>
+      <div class="ramo" data-id="obstetricia2" onclick="toggleRamo(this)" data-prerrequisitos="obstetricia1">Obstetricia Fisiológica II</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
